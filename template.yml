@@ -18,9 +18,9 @@ Resources:
       Properties:
         ManagedPolicyArns:
           - !ImportValue LambdaPolicyDynamodflopez
-          - !ImportValue LambdaPolicyEC2dflopez
-          - !ImportValue LambdaPolicyCWdflopez
-          - !ImportValue LambdaPolicyS3dflopez
+          - !ImportValue LambdaPolicyEC2dlopez
+          - !ImportValue LambdaPolicyCWdlopez
+          - !ImportValue LambdaPolicyS3dlopez
         AssumeRolePolicyDocument:
           Version: 2012-10-17
           Statement:
