@@ -9,7 +9,7 @@ Resources:
         Runtime: python3.7
         MemorySize: 256
         Timeout: 300
-        Role: !GetAtt LambdaRoled.Arn
+        Role: !GetAtt LambdaRole.Arn
         Environment:
             Variables:
                 DYNAMO_BD: !ImportValue DynamoLab 
