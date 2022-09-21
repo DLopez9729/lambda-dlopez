@@ -9,7 +9,7 @@ Resources:
         Runtime: python3.7
         MemorySize: 256
         Timeout: 300
-        Role: !GetAtt LambdaRole.Arn
+        Role: !GetAtt LambdaRoled.Arn
         Environment:
             Variables:
                 DYNAMO_BD: !ImportValue DynamoLab 
@@ -17,10 +17,10 @@ Resources:
       Type: AWS::IAM::Role
       Properties:
         ManagedPolicyArns:
-          - !ImportValue LambdaPolicyDynamo
-          - !ImportValue LambdaPolicyEC2
-          - !ImportValue LambdaPolicyCW
-          - !ImportValue LambdaPolicyS3
+          - !ImportValue LambdaPolicyDynamodflopez
+          - !ImportValue LambdaPolicyEC2dflopez
+          - !ImportValue LambdaPolicyCWdflopez
+          - !ImportValue LambdaPolicyS3dflopez
         AssumeRolePolicyDocument:
           Version: 2012-10-17
           Statement:
