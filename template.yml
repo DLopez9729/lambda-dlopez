@@ -17,7 +17,7 @@ Resources:
       Type: AWS::IAM::Role
       Properties:
         ManagedPolicyArns:
-          - !ImportValue LambdaPolicyDynamodflopez
+          - !ImportValue LambdaPolicyDynamoDlopez
           - !ImportValue LambdaPolicyEC2dlopez
           - !ImportValue LambdaPolicyCWdlopez
           - !ImportValue LambdaPolicyS3dlopez
